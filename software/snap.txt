@@ -1,7 +1,7 @@
 安装snap
 https://snapcraft.io/docs/installing-snapd
 
-ubuntu禁用snap
+ubuntu禁止安装snapd
 执行以下命令
 sudo sh -c "cat > /etc/apt/preferences.d/disable-snapd.pref" << EOL
 Package: snapd
