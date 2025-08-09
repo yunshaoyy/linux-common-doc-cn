@@ -1,0 +1,19 @@
+fedora
+运行以下命令安装 fcitx5 及其中文组件和自启动脚本
+sudo dnf install fcitx5 fcitx5-chinese-addons fcitx5-autostart
+如果在使用kde,还可以安装 kcm-fcitx5 。
+如果使用 im-chooser 无法切换 fcitx5 ,可以运行 sudo dnf remove im-chooser 。
+
+debian/ubuntu
+运行以下命令安装 fcitx5 及其中文组件
+sudo apt install fcitx5 fcitx5-chinese-addons
+
+archlinux
+运行以下命令安装 fcitx5 包组及其中文组件
+sudo pacman -S fcitx5-im fcitx5-chinese-addons
+然后在/etc/environment中写入
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+SDL_IM_MODULE=fcitx
+GLFW_IM_MODULE=ibus
