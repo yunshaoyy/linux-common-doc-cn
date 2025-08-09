@@ -1,0 +1,37 @@
+1.修改 /etc/locale.gen 文件
+en_US.UTF-8 UTF-8
+zh_CN.UTF-8 UTF-8
+然后执行 sudo locale-gen 命令
+
+2.设置一个英文的全局 locale
+/etc/locale.conf
+LANG=en_US.UTF-8
+
+3.GDM 和 SDDM 用户可以在 GNOME 或 KDE 设置中选择语言
+
+4.安装字体
+noto-fonts-cjk #archlinux
+fonts-noto-cjk #ubuntu/debian
+
+5.修正简体中文显示为异体（日文）字形
+创建 /etc/fonts/conf.d/64-language-selector-prefer.conf 并写入
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Sans CJK SC</family>
+      <family>Noto Sans CJK TC</family>
+      <family>Noto Sans CJK JP</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Sans Mono CJK SC</family>
+      <family>Noto Sans Mono CJK TC</family>
+      <family>Noto Sans Mono CJK JP</family>
+    </prefer>
+  </alias>
+</fontconfig>
