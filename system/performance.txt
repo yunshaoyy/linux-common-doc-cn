@@ -1,0 +1,3 @@
+禁用intel的watchdog
+创建/etc/modprobe.d/disable-watchdog.conf并写入
+blacklist iTCO_wdt
