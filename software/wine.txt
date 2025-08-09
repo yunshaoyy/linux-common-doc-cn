@@ -5,4 +5,4 @@ https://flatpak.org/setup
 flatpak install flathub org.winehq.Wine
 flatpak run org.winehq.Wine winecfg
 
-3.中文显示问题可以下载 https://drive.massgrave.dev/zh-cn_windows_10_enterprise_ltsc_2021_x64_dvd_033b7312.iso 后解包，然后复制 windows/fonts 到 ~/.var/app/org.winehq.Wine/data/wine/drive_c/windows/Fonts/
+3.中文显示问题可以下载 https://drive.massgrave.dev/zh-cn_windows_11_enterprise_ltsc_2024_x64_dvd_cff9cd2d.iso 后解包，然后复制 windows/fonts 到 ~/.var/app/org.winehq.Wine/data/wine/drive_c/windows/Fonts/
