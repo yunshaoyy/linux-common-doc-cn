@@ -1,4 +1,4 @@
-1.首先安装flatpak
+1.首先安装flatpak（已安装则跳过此步）
 https://flatpak.org/setup
 
 2.再运行
