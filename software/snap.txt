@@ -1,0 +1,14 @@
+安装snap
+https://snapcraft.io/docs/installing-snapd
+
+ubuntu禁用snap
+执行以下命令
+sudo sh -c "cat > /etc/apt/preferences.d/disable-snapd.pref" << EOL
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
+EOL
+或者手动创建/etc/apt/preferences.d/disable-snapd.pref然后写入
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
